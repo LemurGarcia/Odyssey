@@ -1,0 +1,11 @@
+{
+    "Screen": {
+        "width": 1024,
+        "height": 768,
+        "fullscreen": false,
+        "vsync": true
+    },
+    "Engine": {
+        "font": "Gwent.ttf"
+    }
+}

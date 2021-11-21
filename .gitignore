@@ -1,0 +1,10 @@
+_debug
+_release
+_build
+*~
+*.geany
+.vscode
+native-activity/
+Proj/
+Assets/Textures/old/
+Project/
