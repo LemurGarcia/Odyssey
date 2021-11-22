@@ -4,6 +4,7 @@
 #include "Engine/Texture.h"
 #include "Engine/Inputs.h"
 #include "Engine/Font.h"
+#include "Game/LevelRenderer.h"
 #include <global.h>
 
 static int CalcFPS(uint64_t delta)
@@ -26,6 +27,7 @@ static int CalcFPS(uint64_t delta)
 
 class Application : public Engine
 {
+    LevelRenderer m_lvl_renderer;
 public:
     Application() : Engine()
     {
@@ -47,7 +49,7 @@ protected:
     void Loop(uint64_t delta) override
     {
         Font::Render(L"#gFPS = " + std::to_wstring(CalcFPS(delta)), { -0.95f, -0.85f });
-        Font::Render(L"#WHe-hey! #W", { -0.95f, -0.75f });
+        m_lvl_renderer.Draw();
     }
 };
 

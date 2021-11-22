@@ -39,6 +39,7 @@ include_directories(${INCLUDE})
 
 add_subdirectory(Engine)
 add_subdirectory(Utils)
+add_subdirectory(Game)
 
 set(LINK
     ${GLFW_LIBRARIES}
@@ -46,6 +47,7 @@ set(LINK
     glfw
     Engine
     Utils
+    Game
 )
 
 add_executable(Odyssey ${SRC})

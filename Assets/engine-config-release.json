@@ -6,6 +6,6 @@
         "vsync": true
     },
     "Engine": {
-        "font": "Gwent.ttf"
+        "font": "Mono.ttf"
     }
 }
